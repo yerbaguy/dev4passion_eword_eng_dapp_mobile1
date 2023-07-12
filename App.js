@@ -40,6 +40,8 @@ import {ethers} from 'ethers';
  import  EWordContractt  from './utils/EWordEngContract.json';
 import EngWords from './EngWords';
 import LearnEngWords from './LearnEngWords';
+import EngWordss from './EngWordss';
+import EngWordssss from './EngWordssss';
 
 
  // import  abi  from './utils/EWordEngContract.json';
@@ -79,7 +81,10 @@ const BottomTabNavigator = () => {
       {/* <Tab.Screen name='Learn' component={LearnnnnScreen} options={{ headerShown: false }}/> */}
       <Tab.Screen name='Learn' component={LearnEngWords} options={{ headerShown: false }}/>
       {/* <Tab.Screen name='Words' component={WordssScreen} /> */}
-      <Tab.Screen name='Words' component={EngWords} options={{ headerShown: false }}/>
+      {/* <Tab.Screen name='Words' component={EngWords} options={{ headerShown: false }}/> */}
+      <Tab.Screen name='Words' component={EngWordssss} options={{ headerShown: false }}/>
+      {/* <Tab.Screen name='Words' component={EngWordss} options={{ headerShown: false }}/> */}
+
       {/* <Tab.Screen name='Contact' component={ContactScreen} /> */}
     </Tab.Navigator>
     </View>
@@ -339,20 +344,29 @@ const App: () => Node = () => {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-          <EngWords />
+          {/* <EngWords /> */}
 
-        <Button title={account ? 'Connected' : 'Connect'} onPress={connect} />
-      
+
+
+        {/* <Button title={account ? 'Connected' : 'Connect'} onPress={connect} /> */}
+
+
+
+
         {/* <Button title="Sign" onPress={sign} />
         <Button title="Send transaction" onPress={sendTransaction} />
         <Button title="Add chain" onPress={exampleRequest} />
 
         <Text style={textStyle}>{chain && `Connected chain: ${chain}`}</Text> */}
-        <Text style={textStyle}>
+
+
+        {/* <Text style={textStyle}>
           {' '}
           {account && `Connected account: ${account}\n\n`}
           {account && balance && `Balance: ${balance} ETH`}
-        </Text>
+        </Text> */}
+
+
         {/* <Text style={textStyle}>
           {' '}
           {response && `Last request response: ${response}`}
