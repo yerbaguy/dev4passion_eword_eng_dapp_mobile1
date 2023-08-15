@@ -42,6 +42,7 @@ import EngWords from './EngWords';
 import LearnEngWords from './LearnEngWords';
 import EngWordss from './EngWordss';
 import EngWordssss from './EngWordssss';
+import AddWords from './AddWords';
 
 
  // import  abi  from './utils/EWordEngContract.json';
@@ -80,6 +81,8 @@ const BottomTabNavigator = () => {
       
       {/* <Tab.Screen name='Learn' component={LearnnnnScreen} options={{ headerShown: false }}/> */}
       <Tab.Screen name='Learn' component={LearnEngWords} options={{ headerShown: false }}/>
+      <Tab.Screen name='Add Word' component={AddWords} options={{ headerShown: false }}/>
+
       {/* <Tab.Screen name='Words' component={WordssScreen} /> */}
       {/* <Tab.Screen name='Words' component={EngWords} options={{ headerShown: false }}/> */}
       <Tab.Screen name='Words' component={EngWordssss} options={{ headerShown: false }}/>
@@ -175,6 +178,10 @@ const App: () => Node = () => {
      
        ////this adds new word to the block
       // ewordEngWContract.addEWord("variety","/vəˈraɪəti/","several different sorts of the same thing");
+      //  ewordEngWContract.addEWord("correctly","/kəˈrektli/","in a way that is accurate or true, without any mistakes");
+      ewordEngWContract.addEWord("endorsement","/ɪnˈdɔːsmənt/","a public statement or action showing that you support somebody/something");
+
+
 
 
 
@@ -348,7 +355,7 @@ const App: () => Node = () => {
 
 
 
-        {/* <Button title={account ? 'Connected' : 'Connect'} onPress={connect} /> */}
+        <Button title={account ? 'Connected' : 'Connect'} onPress={connect} />
 
 
 
